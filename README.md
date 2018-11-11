@@ -13,6 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 **Note: All this point are based on my own opinion from some reference!**
 
 **1. Reusable Component**
+
 React implement Composition Model Patterns
 
 - [Composition vs Inheritance](https://reactjs.org/docs/composition-vs-inheritance.html)
@@ -24,12 +25,15 @@ React implement Composition Model Patterns
 - [Virtual DOM in ReactJS](https://hackernoon.com/virtual-dom-in-reactjs-43a3fdb1d130)
 
 **3. One-way data flow (one-way binding)**
+
 In React, data flows in one direction, from Parent to Child. This helps components to be simple and predictable.
 
 - [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
 
 **4. Create React element easier with JSX**
+
 JSX is just a nice syntactic sugar over function calls that create DOM elements. JSX produces React "element"
+
 JSX elements => React.createElement()
 
 - [Introducing JSX](https://reactjs.org/docs/introducing-jsx.html)
@@ -47,6 +51,7 @@ JSX elements => React.createElement()
 - [React Devtools](https://github.com/facebook/react-devtools)
 
 **7. Just Javascript :)**
+
 Start learning React = Learning Javascript in the right way
 
 ## How to learn React?
