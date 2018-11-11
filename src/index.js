@@ -1,12 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-function App() {
-  return (
-    <div className="app">
-      <h1>React Starter</h1>
-      <p>Learning React is fun :D</p>
-    </div>
-  );
-}
 
-ReactDOM.render(<App />, document.getElementById("root"));
+// React Element
+const element = React.createElement("h1", { id: "header" }, "Hello World");
+
+// ReactDOM.render([React Element | Component], [DOM Element])
+ReactDOM.render(element, document.getElementById("root"));
