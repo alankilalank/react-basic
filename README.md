@@ -16,7 +16,7 @@ createElement method takes 3 arguments:
 - the second is any attributes you want the element to have (props)
 - the third is contents or the children of the element (children). in this case the text "Hello World".
 
-ThecreateElement invocation above is going to return an object with this shape :
+The createElement invocation above is going to return an object with this shape :
 
 ```
 {
@@ -28,7 +28,7 @@ ThecreateElement invocation above is going to return an object with this shape :
 }
 ```
 
-and when it’s rendered to the DOM using ReactDOM.render() and produces DOM node that looks like :
+and when it’s rendered to the DOM using ReactDOM.render(), it produces DOM node that looks like :
 
 ```
 <h1 id='header'>Hello World</h1>
