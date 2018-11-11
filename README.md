@@ -1,44 +1,64 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Instalation
 
-In the project directory, you can run:
+1. Clone this repository
+2. `cd` into directory
+3. Run `npm install` or `yarn install` in terminal/command prompt
+4. Run `npm run start` or `yarn start` to start app in the development mode
+5. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm start`
+## Why React?
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Note: All this point are based on my own opinion from some reference!**
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+1. Reusable Component
+   React implement Composition Model Patterns
 
-### `npm test`
+- [Composition vs Inheritance](https://reactjs.org/docs/composition-vs-inheritance.html)
+- [React Composition Patterns](https://hackernoon.com/react-composition-patterns-from-the-ground-up-8401aaad93d7)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Virtual DOM
 
-### `npm run build`
+- [Virtual DOM and Internals](https://reactjs.org/docs/faq-internals.html)
+- [Virtual DOM in ReactJS](https://hackernoon.com/virtual-dom-in-reactjs-43a3fdb1d130)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. One-way data flow (one-way binding)
+   In React, data flows in one direction, from Parent to Child. This helps components to be simple and predictable.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Create React element easier with JSX
+   JSX is just a nice syntactic sugar over function calls that create DOM elements. JSX produces React "element"
+   JSX elements => React.createElement()
 
-### `npm run eject`
+- [Introducing JSX](https://reactjs.org/docs/introducing-jsx.html)
+- [JSX In Depth](https://reactjs.org/docs/jsx-in-depth.html)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+5. Explicit Mutation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [what explicit mutation](https://stackoverflow.com/questions/45167750/what-do-explicit-mutation-and-static-mental-model-mean)
+- [You're Missing The Point of React](https://medium.com/@dan_abramov/youre-missing-the-point-of-react-a20e34a51e1a)
+- [Immutability In React](https://blog.logrocket.com/immutability-in-react-ebe55253a1cc)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+6. Great Developer Tools
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [Create React App](https://github.com/facebook/create-react-app)
+- [React Devtools](https://github.com/facebook/react-devtools)
 
-## Learn More
+7. Just Javascript :)
+   Start learning React = Learning Javascript in the right way
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## How to learn React?
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- ~Webpack~
+- ~Babel~
+- React
+- ~Redux~
+- ~React-Router~
+
+Yeap, just React, focus on React itself. (understanding ES6 features is + )
+
+## Note
+
+Every section is separated with a branch. feel free to check out the different branches on this repository.
