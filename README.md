@@ -6,7 +6,7 @@ A component is a function or a Class which optionally accepts input and returns 
 
 There are 2 ways to create components :
 
-** Function Component **
+**Function Component**
 
 The simplest version of React component is a plain JavaScript function that returns a React element.
 They're commonly called "stateles function components" or just "functional components"
@@ -26,7 +26,7 @@ function World() {
 }
 ```
 
-** Class Component **
+**Class Component**
 
 Components can also created with ES6 classes :
 
