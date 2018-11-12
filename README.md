@@ -1,39 +1,66 @@
-## React Element
+## React Components
 
-An element is a plain object describing a component instance or DOM node and its desired properties.
-React element is an object representation of a DOM node. React element isn’t actually the thing that we see on screen,
-instead, it’s just an object representation of it.
+Components are the building blocks of React elements. we can think of a component is a collection of HTML, CSS, JS, and some internal data (state|props) specific to that component.
 
-To create React element, we can use React’s createElement method.
+A component is a function or a Class which optionally accepts input and returns a React element.
 
-```
-const element = React.createElement("h1", { id: "header" }, "Hello World");
-```
+There are 2 ways to create components :
 
-createElement method takes 3 arguments:
+** Function Component **
 
-- The first is a tag name string (div, span, h1, p, etc) or a React component type (a class or a function), or a React fragment type.
-- the second is any attributes you want the element to have (props)
-- the third is contents or the children of the element (children). in this case the text "Hello World".
-
-The createElement invocation above is going to return an object with this shape :
+The simplest version of React component is a plain JavaScript function that returns a React element.
+They're commonly called "stateles function components" or just "functional components"
 
 ```
-{
-  type: 'h1',
-  props: {
-    children: 'Hello World',
-    id: 'header'
+function World() {
+  return <span>World</span>;
+}
+```
+
+notice that `<span>World</span>` looks like HTML but it's not. it's not string either. It's called JSX.
+The JSX elements are actually compiled down to Javascript. The code above after transformed
+
+```
+function World() {
+  return React.createElement("span", null, "World");
+}
+```
+
+** Class Component **
+
+Components can also created with ES6 classes :
+
+```
+class Hello extends Component {
+  render() {
+    return <span>Hellow</span>;
   }
 }
 ```
 
-and when it’s rendered to the DOM using ReactDOM.render(), it produces DOM node that looks like :
+Class component is a little bit more powerful than a function component.
+It can store local state and perform custom logic inside it.
+
+A function component is less powerful but is simpler, and function component acts like a class component
+with just a single render() method.
+
+However, whether functions or classes, fundamentally they are all components to React. They take the props as their input, and return the elements as their output.
+
+Components also could be combine or nested between Class component and function, this become common ways to composing component in React.
 
 ```
-<h1 id='header'>Hello World</h1>
+class HelloWorld extends Component {
+  render() {
+    return (
+      <div className="container">
+        <Hello /> <World />
+      </div>
+    );
+  }
+}
 ```
 
-## What Next
+## Learn More
 
-JSX
+- [React Components, elements, and Instance](https://reactjs.org/blog/2015/12/18/react-components-elements-and-instances.html)
+- [Components](https://reactjs.org/docs/glossary.html#components)
