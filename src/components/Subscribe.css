@@ -1,0 +1,30 @@
+.subscribe {
+  padding: 35px;
+  text-align: center;
+}
+.subscribe-title {
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe-input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: #e6e6e6;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 100px;
+  width: 50%;
+  transition: all 0.2s;
+  margin-bottom: 10px;
+}
+.subscribe-input:focus {
+  outline: none;
+}
