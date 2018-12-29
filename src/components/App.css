@@ -1,77 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
   font-family: 'Roboto', sans-serif;
-  color: #585858;
-  background-color: #2f8296;
+  color: #222222;
+  background-color: #f6f7fb;
 }
-.app {
-  width: 90%;
-  margin: 0 auto;
-}
-.content {
+.container {
+  padding: 10px;
+  margin: 10px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-start;
+  flex-wrap: wrap;
 }
-.app-view {
-  flex: 1;
+.box {
   background-color: #ffffff;
+  border: 1px solid #e7eaed;
+  padding: 30px;
+  margin: 10px;
+  flex-grow: 1;
 }
-.detail {
-  display: flex;
-  font-size: 14px;
-  padding: 40px;
-  background-color: #faf9f9;
-  border-bottom: #f4f2f2;
-}
-.feeds {
-  background-color: #ffffff;
-  padding: 20px;
-  flex: 0 0 60%;
-  margin-right: 40px;
-  border: 1px solid #eeeeef;
-}
-.paragraph {
-  margin-bottom: 20px;
+.box-profile {
+  flex: 1 0 200px;
 }
 
-.right-sidebar {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.sidebar {
-  background-color: #414040;
-  color: #ffffff;
-  flex: 0 0 18%;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-/* Profile */
-.profile {
-  text-align: center;
-  padding: 20px;
-}
-.avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-.name {
-  font-size: 16px;
-  line-height: 1;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-.handle {
-  margin-top: 0;
-  font-size: 11px;
-  color: #999999;
-}
-.btn-info,
-.btn-info:link {
+.btn-primary,
+.btn-primary:link {
   text-decoration: none;
   padding: 8px 20px;
   display: inline-block;
@@ -84,33 +44,24 @@ body {
   background-color: #06839a;
   color: #ffffff;
 }
-
-/* Header */
-.header {
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff;
-  border-bottom: 1px solid #f4f2f2;
-}
-.header-heading {
-  font-size: 18px;
+.badge {
+  position: relative;
   margin-left: 20px;
 }
-.header-list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+.badge::before {
+  position: absolute;
+  line-height: 1;
+  top: 0;
+  right: -24px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  content: '';
+  background-color: black;
 }
-.header-list-item {
-  margin-right: 20px;
+.badge-green::before {
+  background-color: green;
 }
-
-.header-list-item a {
-  text-decoration: none;
-  color: #06839a;
-}
-.header-list-item a:hover {
-  color: #08a0bb;
+.badge-yellow::before {
+  background-color: orange;
 }

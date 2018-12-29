@@ -1,19 +1,19 @@
-.subscribe {
-  padding: 30px;
+.login {
+  padding: 25px;
   text-align: center;
 }
-.subscribe-title {
+.login-title {
   font-size: 20px;
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.subscribe-form {
+.login-form {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
 }
-.subscribe-input {
+.login-input {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -21,10 +21,9 @@
   border: none;
   padding: 8px 20px;
   border-radius: 100px;
-  flex: 1 1 90%;
-  margin-right: 10px;
   transition: all 0.2s;
+  margin-bottom: 10px;
 }
-.subscribe-input:focus {
+.login-input:focus {
   outline: none;
 }

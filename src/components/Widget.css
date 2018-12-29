@@ -6,17 +6,6 @@
   position: relative;
   overflow: hidden;
 }
-.widget::before {
-  content: '\201C';
-  position: absolute;
-  top: -2.75rem;
-  left: -1rem;
-  line-height: 1;
-  font-size: 20rem;
-  color: #f3f3f3;
-  font-family: sans-serif;
-  z-index: 1;
-}
 .widget-text {
   z-index: 10;
   position: relative;
@@ -38,7 +27,7 @@
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 .widget-user-date {
   font-size: 10px;

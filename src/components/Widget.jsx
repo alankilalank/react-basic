@@ -1,7 +1,7 @@
 import React from 'react';
-import './Widget.css';
+import './widget.css';
 
-const Widget = () => {
+const Widget = props => {
   return (
     <figure className="widget">
       <blockquote className="widget-text">
@@ -18,7 +18,7 @@ const Widget = () => {
           <p className="widget-user-name">Adam Smith</p>
           <p className="widget-user-date">Nov 13rd, 2019</p>
         </div>
-        <div className="widget-rating">8.5</div>
+        <div className="widget-rating">{props.score}</div>
       </figcaption>
     </figure>
   );
