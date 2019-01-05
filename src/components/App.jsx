@@ -5,7 +5,7 @@ import Widget from './Widget';
 import List from './List';
 import Login from './Login';
 import LoginIndicator from './LoginIndicator';
-import './app.css';
+import './App.css';
 
 function getFullname(firstName, lastName) {
   return firstName + ' ' + lastName;
