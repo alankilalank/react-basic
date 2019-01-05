@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Button from './Button';
-import './Login.css';
+import './login.css';
 
 class Login extends Component {
   render() {
