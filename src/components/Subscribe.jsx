@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Button from './Button';
-import './subscribe.css';
+import './Subscribe.css';
 
 class Subscribe extends Component {
   render() {
